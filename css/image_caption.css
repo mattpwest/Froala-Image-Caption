@@ -1,7 +1,7 @@
 /*!
  * Froala Image Caption Plugin
- * Written by Matt Dziuban (http://mattdziuban.com)
- * Tested with Froala v1.2.3 - v1.2.6 (http://editor.froala.com)
+ * Written by Matt Dziuban (http://mattdziuban.com) for Froala v1.2.3 - v1.2.6 (http://editor.froala.com)
+ * Updated by Matt Van Der Westhuizen (https://chaotik.co.za) for Froala v2.4.1
  */
 .post-caption-container {
   text-align: center;
@@ -55,7 +55,7 @@
   display: none !important;
 }
 .thumbnail .caption {
-  padding: 5px;
+  padding: 0 5px 5px 5px;
   color: #777;
   font-size: 11pt;
   line-height: 1.25em;
@@ -67,7 +67,7 @@
 .fr-fir, img.fr-fir {
   margin:4px 0 10px 20px;
 }
-.fr-fin, img.fr-fin {
+.fr-fi, img.fr-fi {
   clear: both;
   display: block;
   margin: 10px auto;
@@ -78,7 +78,7 @@
 .f-img-editor.fr-fir {
   float: right;
 }
-.f-img-editor.fr-fin {
+.f-img-editor.fr-fi {
   float: none;
 }
 .f-img-editor img {
