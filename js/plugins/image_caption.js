@@ -115,14 +115,15 @@
                 } else {
                     var classes = '' + this.getImageClass($image.attr('class'));
                     var refId = 'img-' + (new Date()).getTime();
+                    var style = $image.attr('style');
                     var captionHtml =
-                        '<span class="post-caption-container ' + classes + '" id="' + refId + '">' +
+                        '<div class="post-caption-container ' + classes + '" id="' + refId + '" style="' + style + '">' +
                           '<span class="thumbnail">' +
                             $image.attr('data-ref-id', '#' + refId).get(0).outerHTML + //.replace('>', 'contenteditable="true">') +
                             '<span class="caption pull-center" style="width:' + ($image.width() - 18) + 'px" contenteditable="false">' + captionText +
                             '</span>' +
                           '</span>' +
-                        '</span>';
+                        '</div>';
 
                     $image.parent().html(captionHtml);
                 }
